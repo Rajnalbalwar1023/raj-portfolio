@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .navbar{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: whitesmoke;
+            color: #0c0c0c;
+            border-bottom: 1px solid whitesmoke;
+        }
+        .list{
+            display: flex;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: space-between;
+            padding-left: 60px;    
+        }
+        .list h1{
+            font-family: sans-serif;
+            font-size: 30px;
+            color: rgb(10, 52, 116);
+
+        }
+        
+        .list ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding-left: 900px;
+            align-items: center;
+            gap: 40px;   
+        }
+        .list ul li a{
+            justify-content: space-between;
+            color: black;
+            text-decoration: none;
+            
+        }
+        body{
+            background-color: rgb(203, 169, 234);
+        }
+        .progress-section {
+            text-align: center;
+            max-width: 1000px;
+            margin: auto;
+          }
+          
+          .progress-section h2 {
+            font-size: 35px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-top: 40px;
+            color: rgb(10, 52, 116);
+          }
+
+          .line{
+            height: 4px;
+            width: 50px;
+            background-color: rgb(10, 52, 116);
+            text-align: center;
+            max-width: 1000px;
+            margin: auto;
+          }
+          .contact-section {
+            padding: 60px 20px;
+            background-color: #f6f8fc;
+          }
+          
+          .container {
+            max-width: 1000px;
+            margin: auto;
+          }
+          
+          h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #1a237e;
+            margin-bottom: 10px;
+            position: relative;
+          }
+          
+          h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #1a237e;
+            margin: 8px auto 30px;
+          }
+          
+          .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+          }
+          
+          .contact-info {
+            flex: 1;
+            min-width: 260px;
+            
+          }
+          
+          .contact-info h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #1a237e;
+            margin-left: -210px;
+          }
+          
+          .info-item {
+            display: flex;
+            align-items:center;
+            margin-bottom: 20px;
+          }
+          
+          .icon {
+            font-size: 24px;
+            margin-right: 15px;
+            background: #e0e7ff;
+            padding: 15px;
+            border-radius: 50%;
+            color: #1a237e;
+          }
+          
+          .contact-form {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          }
+          
+          .contact-form input,
+          .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #fff;
+            transition: 0.3s ease;
+          }
+          
+          .contact-form input:focus,
+          .contact-form textarea:focus {
+            border-color: #1a237e;
+            outline: none;
+          }
+          
+          .contact-form button {
+            padding: 12px;
+            border: none;
+            background-color: #1a237e;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+          }
+          
+          .contact-form button:hover {
+            background-color: #3949ab;
+          }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div class="list">
+            <h1>RN</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="Skill.html">Skill</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="progress-section">
+        <h2>Get In Touch</h2>
+        <br>
+        <div class="contact-wrapper">
+            <!-- Left Info Section -->
+            <div class="contact-info">
+             <h3>Contact Information</h3> 
+              <div class="info-item">
+                <span class="icon">📧</span>
+                <div>
+                  <strong>Email</strong>
+                  <p>rajnalbalwar10@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="icon">📱</span>
+                <div>
+                  <strong>Phone</strong>
+                  <p>9421632899</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <p>Pune</p>
+                </div>
+              </div>
+            </div>
+    
+            
+            <form class="contact-form">
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="text" placeholder="Subject" />
+              <textarea rows="5" placeholder="Message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      
+    </section>    
+    
+</body>
+</html>

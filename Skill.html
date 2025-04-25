@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Section</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .navbar{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: whitesmoke;
+            color: #0c0c0c;
+            border-bottom: 1px solid whitesmoke;
+        }
+        .list{
+            display: flex;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: space-between;
+            padding-left: 60px;    
+        }
+        .list h1{
+            font-family: sans-serif;
+            font-size: 30px;
+            color: rgb(10, 52, 116);
+
+        }
+        
+        .list ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding-left: 900px;
+            align-items: center;
+            gap: 40px;   
+        }
+        .list ul li a{
+            justify-content: space-between;
+            color: black;
+            text-decoration: none;
+            
+        }
+        body{
+            background-color: rgb(216, 192, 239);
+        }
+        .progress-section {
+            text-align: center;
+            max-width: 1000px;
+            margin: auto;
+          }
+          
+          .progress-section h2 {
+            font-size: 35px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-top: 40px;
+            color: rgb(10, 52, 116);
+          }
+
+          .line{
+            height: 4px;
+            width: 50px;
+            background-color: rgb(10, 52, 116);
+            text-align: center;
+            max-width: 1000px;
+            margin: auto;
+          }
+          .skills-section {
+            padding: 60px 20px;
+            text-align: center;
+          }
+          
+          .container {
+            width: 500px;
+            margin: 0 auto;
+          }
+          
+          h1 {
+            font-size: 32px;
+            color: #222;
+            margin-bottom: 10px;
+          }
+          
+          .container > p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+          }
+          
+          .skill {
+            margin-bottom: 30px;
+            text-align: left;
+          }
+          
+          .skill-name {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 18px;
+            color: #333;
+          }
+          
+          .progress-bar {
+            width: 100%;
+            height: 20px;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+          }
+          
+          .progress {
+            height: 100%;
+            line-height: 20px;
+            color: white;
+            font-size: 14px;
+            text-align: right;
+            padding-right: 10px;
+            border-radius: 30px;
+            animation: grow 2s ease forwards;
+          }
+          
+          .html {
+            width: 90%;
+            background: linear-gradient(90deg, #f16529, #e44d26);
+          }
+          
+          .css {
+            width: 85%;
+            background: linear-gradient(90deg, #2965f1, #264de4);
+          }
+          
+          .python {
+            width: 80%;
+            background: linear-gradient(90deg, #f0db4f, #e4c64c);
+            color: #333;
+          }
+          
+          .leadership {
+            width: 95%;
+            background: linear-gradient(90deg, #306998, #4b8bbe);
+          }
+          
+          .Communication {
+            width: 75%;
+            background: linear-gradient(90deg, #61dafb, #007acc);
+            color: #000;
+          }
+
+          .C-Bacics {
+            width: 85%;
+            background: linear-gradient(90deg, #61dafb, #007acc);
+            color: #000;
+          }
+          
+          @keyframes grow {
+            from { width: 0; }
+          }
+          
+          
+          
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div class="list">
+            <h1>RN</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    //<section class="progress-section">
+        <h2>My Skills</h2>
+        <div class="line"></div>
+        
+        <section class="skills-section">
+            
+              <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="progress-bar">
+                  <div class="progress html">90%</div>
+                </div>
+              </div>
+        
+              <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="progress-bar">
+                  <div class="progress css">85%</div>
+                </div>
+              </div>
+        
+              <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="progress-bar">
+                  <div class="progress python">80%</div>
+                </div>
+              </div>
+        
+              <div class="skill">
+                <div class="skill-name">leadership</div>
+                <div class="progress-bar">
+                  <div class="progress leadership">95%</div>
+                </div>
+              </div>
+        
+              <div class="skill">
+                <div class="skill-name">Communication</div>
+                <div class="progress-bar">
+                  <div class="progress Communication">75%</div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-name">C Bacics</div>
+                <div class="progress-bar">
+                  <div class="progress C-Bacics">85%</div>
+                </div>
+              </div>
+            </div>
+          
+      </section>
+
+    
+</body>
+</html>

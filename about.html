@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .navbar{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: whitesmoke;
+            color: #0c0c0c;
+            border-bottom: 1px solid whitesmoke;
+        }
+        .list{
+            display: flex;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: space-between;
+            padding-left: 60px;    
+        }
+        .list h1{
+            font-family: sans-serif;
+            font-size: 30px;
+            color: rgb(10, 52, 116);
+
+        }
+        
+        .list ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding-left: 900px;
+            align-items: center;
+            gap: 40px;   
+        }
+        .list ul li a{
+            justify-content: space-between;
+            color: black;
+            text-decoration: none;
+            
+        }
+        body{
+            background-color: rgb(203, 169, 234);
+        }
+        .hero {
+            display: flex;
+            padding: 50px;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+          
+          .text-section {
+            flex: 1;
+            max-width: 600px;
+            margin-left: 50px;
+          }
+          
+          .text-section h1 {
+            font-size: 40px;
+            color: #0a2c80;
+            margin-bottom: 20px;
+          }
+          
+          .text-section p {
+            margin-bottom: 15px;
+            font-size: 17px;
+          }
+          
+          .btn {
+            display: inline-block;
+            background-color: #0055ff;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+          }
+          
+          .image-section {
+            flex: 1;
+            max-width: 400px;
+            margin-left: 50px;
+          }
+          
+          .image-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div class="list">
+            <h1>RN</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="Skill.html">Skill</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        
+            <section class="hero">
+                <div class="text-section">
+                  <h1>Hello, I'm Raj !</h1>
+                  <p>I'm a FY Electronics student at MIT-AOE with a passion for Embedded System and user experience design. I enjoy creating digital experiences that are both functional and aesthetically pleasing.</p>
+                  <p>Throughout my academic journey, I've developed a foundation in various Electronics system and frameworks. I'm particularly interested in Automobile Automation and creating responsive, accessible user friendly Technology.</p>
+                  <p>When I'm not coding or studying, you can find me hiking, Treking, or experimenting with new recipes in the kitchen. I believe in continuous learning and am always looking for new challenges to expand my skill set.</p>
+                  <a class="btn" href="#">Download CV</a>
+                </div>
+                <div class="image-section">
+                  <img src="rajabout.jpg" alt="raj" />
+                </div>
+              </section>
+        </aside>
+    </div>
+    
+</body>
+</html>

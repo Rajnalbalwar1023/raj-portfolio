@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .navbar {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: whitesmoke;
+      color: #0c0c0c;
+      border-bottom: 1px solid whitesmoke;
+    }
+
+    .list {
+      display: flex;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      justify-content: space-between;
+      padding-left: 60px;
+    }
+
+    .list h1 {
+      font-family: sans-serif;
+      font-size: 30px;
+      color: rgb(10, 52, 116);
+
+    }
+
+    .list ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      padding-left: 900px;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .list ul li a {
+      justify-content: space-between;
+      color: black;
+      text-decoration: none;
+
+    }
+
+    body {
+      background-color: rgb(203, 169, 234);
+    }
+
+    .education-section {
+      padding: 60px 50px;
+      background-size: 20px 20px;
+    }
+
+    .education-section h1 {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 50px;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-left: 250px;
+    }
+
+    .edu-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .icon {
+      font-size: 36px;
+      color: #a0a0a0;
+    }
+
+    .content .year {
+      font-size: 14px;
+      color: #131212;
+      margin-bottom: 5px;
+    }
+
+    .content h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .content .institution {
+      font-size: 14px;
+      color: #222121;
+    }
+
+    .certification-section h1 {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 700;
+      margin-top: -20px;
+
+    }
+
+    .certification-grid {
+      display: flex;
+      text-align: center;
+
+    }
+
+
+    .certificates {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .certificate {
+      flex: 1;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .certificate:hover {
+      transform: translateY(-5px);
+    }
+
+    .certificate img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .description {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      color: #1d1c1c;
+    }
+
+    @media (max-width: 768px) {
+      .certificates {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+
+    <div class="list">
+      <h1>RN</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="Skill.html">Skill</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="education-section">
+    <h1>Education</h1>
+    <div class="education-grid">
+      <div class="edu-item">
+        <div class="icon">&#x1F393;</div>
+        <div class="content">
+          <p class="year">2025 - Present</p>
+          <h3>B.Tech in ENTC Engineering</h3>
+          <p class="institution">MIT AOE</p>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="icon">&#x1F393;</div>
+        <div class="content">
+          <p class="year">2025 - Summer</p>
+          <h3>Cisco and Nasscom Certification</h3>
+          <p class="institution">Tech Academy</p>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="icon">&#x1F393;</div>
+        <div class="content">
+          <p class="year">2023 - 2024</p>
+          <h3>Higher Secondary Certificate</h3>
+          <p class="institution">Jawaharlal Nehru School,Barbada</p>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="icon">&#x1F393;</div>
+        <div class="content">
+          <p class="year">2021 - 2022</p>
+          <h3>Secondary School Certificate</h3>
+          <p class="institution">Jawaharlal Nehru School,Barbada</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="icon">&#x1F393;</div>
+        <div class="content">
+          <p class="year">2025 - Present</p>
+          <h3>Spark Club Member</h3>
+          <p class="institution">MIT AOE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="certification-section">
+    <h1>Certifications</h1>
+    <div class="certificates">
+      <div class="certificate">
+        <img src="py1.png" alt="Certificate 1">
+        <div class="description">
+          Python Essential 1
+        </div>
+      </div>
+      <div class="certificate">
+        <img src="py2.png" alt="Certificate 2">
+        <div class="description">
+          Python Essential 2
+        </div>
+      </div>
+      <div class="certificate">
+        <img src="tech25.png" alt="Certificate 3">
+        <div class="description">
+          Co-ordinated technoPilia'25
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

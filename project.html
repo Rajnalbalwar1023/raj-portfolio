@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Section</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .navbar{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: whitesmoke;
+            color: #0c0c0c;
+            border-bottom: 1px solid whitesmoke;
+        }
+        .list{
+            display: flex;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: space-between;
+            padding-left: 60px;    
+        }
+        .list h1{
+            font-family: sans-serif;
+            font-size: 30px;
+            color: rgb(10, 52, 116);
+
+        }
+        
+        .list ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding-left: 900px;
+            align-items: center;
+            gap: 40px;   
+        }
+        .list ul li a{
+            justify-content: space-between;
+            color: black;
+            text-decoration: none;
+            
+        }
+        body{
+            background-color: rgb(203, 169, 234);
+        }
+        .projects-section {
+            text-align: center;
+        }
+          
+          .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            margin-top: 50px;
+            color: rgb(10, 52, 116);
+            text-decoration: underline;
+          }
+          
+          .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            margin-top: 70px;
+          }
+          
+          .project-card {
+            background-color: #f3eaea;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 350px;
+            transition: transform 0.3s ease;
+          }
+          
+          .project-card:hover {
+            transform: scale(1.05);
+          }
+          
+          .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+          
+          .card-content {
+            padding: 15px;
+            text-align: center;
+          }
+          
+          .card-content h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #0f0e0e;
+          }
+          
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div class="list">
+            <h1>RN</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="Skill.html">Skill</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+       
+        <h1 class="title">My Projects</h1>
+    
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="firealarm.jpg" alt="Fire Alarm">
+            <div class="card-content">
+              <h3>Fire Alarm</h3>
+            </div>
+          </div>
+    
+          <div class="project-card">
+            <img src="robot.jpg" alt="Obstracle avoiding robot">
+            <div class="card-content">
+              <h3>Obstracle Avoiding Robot</h3>
+            </div>
+          </div>
+    
+          <div class="project-card">
+            <img src="rainalarm.jpg" alt="rain alarm">
+            <div class="card-content">
+              <h3>Rain Alarm</h3>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="electricvehical.jpg" alt="Electric Vehicle">
+            <div class="card-content">
+              <h3>Autonomous Electric Vehicle</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+</body>
+</html>
